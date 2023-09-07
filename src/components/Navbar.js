@@ -10,7 +10,7 @@ function Navbar() {
   // const handleCollapse = () => setIsCollapsed(!isCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-md px-4">
+    <nav className="navbar bg-white navbar-expand-md px-4">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           AutoCar

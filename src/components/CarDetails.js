@@ -53,14 +53,18 @@ function CarDetails() {
   ];
 
   return (
-    <div className="container px-4">
-      <Link to="/">Back to home!</Link>
-      <h1>{carInfo.make ?? "Unknown"}</h1>
-      {properties.map((property) => (
-        <p key={property.name}>
-          {property.displayName}: {carInfo[property.name] ?? "Unknown"}
-        </p>
-      ))}
+    <div className="container p-4">
+      <Link className="btn btn-outline-danger" to="/">
+        Back to home!
+      </Link>
+      <div className="card card-body mt-4 p-4">
+        <h1>{carInfo.make ?? "Unknown"}</h1>
+        {properties.map((property) => (
+          <p key={property.name}>
+            {property.displayName}: {carInfo[property.name] ?? "Unknown"}
+          </p>
+        ))}
+      </div>
     </div>
   );
 }
