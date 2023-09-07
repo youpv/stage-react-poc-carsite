@@ -38,7 +38,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <button className="btn btn-primary me-4" type="button">
+          <button className="btn btn-danger me-4" type="button">
             Find your car
           </button>
         </div>

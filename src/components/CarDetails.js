@@ -10,13 +10,15 @@ function CarDetails() {
 
   useEffect(() => {
     const fetchCarsDetails = () => {
-      fetch("https://site--cars-express-app--gbmmwqlm6cfw.code.run/cars?limit=24")
+      fetch(
+        "https://site--cars-express-app--gbmmwqlm6cfw.code.run/cars?limit=2059"
+      )
         .then((res) => {
           return res.json();
         })
         .then((data) => {
           setCarInfo(data.data[id]);
-          console.log(data.data[id]);
+          // console.log(data.data[id]);
         });
     };
 
@@ -27,29 +29,38 @@ function CarDetails() {
     return <h1>No Car Found!</h1>;
   }
 
+  const properties = [
+    { name: "make", displayName: "Brand" },
+    { name: "model", displayName: "Model" },
+    { name: "price", displayName: "Price" },
+    { name: "year", displayName: "Year" },
+    { name: "kilometer", displayName: "Kilometers" },
+    { name: "fuel_type", displayName: "Fuel Type" },
+    { name: "transmission", displayName: "Transmission" },
+    { name: "location", displayName: "Location" },
+    { name: "color", displayName: "Color" },
+    { name: "owner", displayName: "Owner" },
+    { name: "seller_type", displayName: "Seller Type" },
+    { name: "engine", displayName: "Engine" },
+    { name: "max_power", displayName: "Max Power" },
+    { name: "max_torque", displayName: "Max Torque" },
+    { name: "drivetrain", displayName: "Drivetrain" },
+    { name: "car_length", displayName: "Car Length" },
+    { name: "width", displayName: "Width" },
+    { name: "height", displayName: "Height" },
+    { name: "seating_capacity", displayName: "Seating Capacity" },
+    { name: "fuel_tank_capacity", displayName: "Fuel Tank Capacity" },
+  ];
+
   return (
-    <div>
-    <Link to='/'>Back to home!</Link>
-      <h1>{carInfo.make}</h1>
-      <p>Model: {carInfo.model}</p>
-      <p>Price: ${carInfo.price}</p>
-      <p>Year: {carInfo.year}</p>
-      <p>Kilometer: {carInfo.kilometer} km</p>
-      <p>Fuel Type: {carInfo.fuel_type}</p>
-      <p>Transmission: {carInfo.transmission}</p>
-      <p>Location: {carInfo.location}</p>
-      <p>Color: {carInfo.color}</p>
-      <p>Owner: {carInfo.owner}</p>
-      <p>Seller Type: {carInfo.seller_type}</p>
-      <p>Engine: {carInfo.engine}</p>
-      <p>Max Power: {carInfo.max_power}</p>
-      <p>Max Torque: {carInfo.max_torque}</p>
-      <p>Drivetrain: {carInfo.drivetrain}</p>
-      <p>Car Length: {carInfo.car_length} mm</p>
-      <p>Width: {carInfo.width} mm</p>
-      <p>Height: {carInfo.height} mm</p>
-      <p>Seating Capacity: {carInfo.seating_capacity}</p>
-      <p>Fuel Tank Capacity: {carInfo.fuel_tank_capacity} liters</p>
+    <div className="container px-4">
+      <Link to="/">Back to home!</Link>
+      <h1>{carInfo.make ?? "Unknown"}</h1>
+      {properties.map((property) => (
+        <p key={property.name}>
+          {property.displayName}: {carInfo[property.name] ?? "Unknown"}
+        </p>
+      ))}
     </div>
   );
 }

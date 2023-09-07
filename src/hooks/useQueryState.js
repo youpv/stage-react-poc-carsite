@@ -9,7 +9,7 @@ export const useQueryState = (query) => {
 
   const setQuery = useCallback(
     (value) => {
-        console.log(value)
+        // console.log(value)
       const existingQueries = qs.parse(location.search, {
         ignoreQueryPrefix: true,
       });
