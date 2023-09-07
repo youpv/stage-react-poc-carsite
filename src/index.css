@@ -1,13 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5 {
+  font-weight: 700 !important;
 }
+
+button {
+  font-weight: 600 !important;
+}
+
+.header-text {
+  font-weight: 600 !important;
+  text-align: justify;
+}
+
+.car-card-details div p:first-child {
+  color: darkgray;
+  margin-bottom: 0;
+}
+
+.car-card-details div p:last-child {
+  font-weight: 600;
+}
+
+.card {
+  border-color: #F4F4F4;
+}
+
+/* @import "bootstrap/scss/bootstrap.scss"; */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #efefef;
+  width: 100dvw;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+.car-list {
+  display: grid;
+  gap: 24px;
+}
+
+.car-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.car-item-image {
+  width: 100%;
+  height: 164px;
+  background-color: darkgray;
+}
+
+.car-item h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.car-item-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
+.car-item-details div p:first-child {
+  color: darkgray;
+}
+
+.car-item-details div p:last-child {
+  font-weight: 600;
+} */
