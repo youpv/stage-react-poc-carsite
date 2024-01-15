@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React PoC Car Site 🚗
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inleiding 🚀
+Dit project, "stage-react-poc-carsite", is een Proof of Concept (PoC) voor een autoverkoop website, gebouwd met React. Het bevat verschillende componenten om auto's te tonen en te filteren, en maakt gebruik van moderne React-praktijken. Het ontwerp van de site is gemaakt door Jasper Peters, designer bij EnoRm.
 
-## Available Scripts
+## Belangrijkste Kenmerken 🌟
+- **Auto Lijst**: Toont een lijst van auto's met hun details.
+- **Auto Details**: Biedt gedetailleerde informatie over een specifieke auto.
+- **Filters**: Stelt gebruikers in staat om auto's te filteren op basis van verschillende criteria.
+- **Paginatie**: Ondersteunt het bladeren door meerdere pagina's van auto's.
+- **Responsief Ontwerp**: Geschikt voor verschillende schermformaten.
 
-In the project directory, you can run:
+## Technologieën Gebruikt 💻
+- React
+- CSS
+- JavaScript
 
-### `npm start`
+## Installatie 💾
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Kloon de Repository** 👨‍💻
+   ```
+   git clone https://github.com/youpv/stage-react-poc-carsite.git
+   cd stage-react-poc-carsite
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Installeer NPM Pakketten** 📦
+   ```
+   npm install
+   ```
 
-### `npm test`
+3. **Start de Applicatie** 🌟
+   ```
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Gebruik 📋
+Na het starten van de applicatie, is de website toegankelijk via `http://localhost:3000`. Navigeer door de website om de verschillende functies te verkennen.
 
-### `npm run build`
+## Licentie 📜
+Dit project heeft geen licentie.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Bijdragen 👥
+Ik accepteer geen bijdragen aan dit project.
